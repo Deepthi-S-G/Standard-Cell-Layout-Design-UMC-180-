@@ -38,7 +38,7 @@ Provides a lean DRC only snapshot so large clock or buffer chains can instantiat
 ![ Inverter 4X Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20schematic.png)
 ![ Inverter 4X Layout ](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20layout.png)
 ![ Inverter 4X Layout Core](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20layout%20core.png)
-![Inverter 4X Layout hdrc](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20layout%20core.png)
+![Inverter 4X Layout hdrc](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20layout%20hdrc.png)
 
 
 ## 2 Input NAND Gate
