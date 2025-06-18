@@ -22,9 +22,9 @@ Added proper body ties (PMOS → VDD, NMOS → GND), aligned diffusion e
 A hierarchical DRC–only view now lets higher level schematics drop multiple inverter instances while verifying rule compliance without repeating LVS every time.
 
 ![Inverter Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20schematic.png)
-![Diagram 2]()
-![Diagram 3]()
-![Diagram 4]()
+![Inverter Layout ](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inv%20layout.png)
+![Inverter Layout Core](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inv%20layout%20core.png)
+![Inverter Layout hdrc ](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inv%20layout%20hdrc.png)
 
 
 ## Inverter 4X
@@ -35,10 +35,10 @@ Created by scaling the transistor widths 4 ×. Early placement violated poly t
 ### HDRC View:
 Provides a lean DRC only snapshot so large clock or buffer chains can instantiate the 4× cell repeatedly without incurring schematic equivalence runtimes.
 
-![Diagram 1]()
-![Diagram 2]()
-![Diagram 3]()
-![Diagram 4]()
+![ Inverter 4X Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20schematic.png)
+![ Inverter 4X Layout ](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20layout.png)
+![ Inverter 4X Layout Core](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20layout%20core.png)
+![Inverter 4X Layout hdrc](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20layout%20core.png)
 
 
 ## 2 Input NAND Gate
@@ -50,10 +50,12 @@ Added a grounded well tap between the NMOS devices, ensured all poly extensions 
 ### HDRC View: 
 The hierarchical DRC view enables rapid top level verification of combinational logic blocks populated with NAND instances, catching rule infractions while skipping redundant LVS comparisons
 
-![Diagram 1]()
-![Diagram 2]()
-![Diagram 3]()
-![Diagram 4]()
+![ 2 Input NAND Gate Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/nand%20schematic.png)
+![2 Input NAND Gate Layout](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/nandlayout.png)
+![2 Input NAND Gate Layout Core](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/nand%20layout%20core.png)
+![2 Input NAND Gate Layout hdrc](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/nand%20layout%20hdrc.png)
+
+
 ## EXOR Gate
 
 ### Initial Layout: 
@@ -63,9 +65,10 @@ After proper body connections (PMOS to VDD, NMOS to GND) were added and signal p
 ### HDRC View: 
 A hierarchical DRC view was created to validate multiple instances of the EXOR cell in higher-level designs. This view performs only DRC verification, ensuring layout rule compliance without re-checking schematic equivalence. 
 
-![Diagram 1]()
-![Diagram 2]()
-![Diagram 3]()
+![EXOR Gate Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/exor%20schematic.png)
+![EXOR Gate Layout ](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/exor_layout.png)
+![EXOR Gate Layout Core](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/exor_core.png)
+![EXOR Gate Layout hdrc](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/exor_hdrc.png)
 
 ## Multiplexer (2:1 MUX)
 
@@ -76,12 +79,12 @@ After resolving body connections and rerouting signals and control lines using E
 ### HDRC Verification: 
 A hierarchical layout view was used to check the MUX when instantiated multiple times. DRC ensured proper spacing and geometry compliance for all instances. 
 
-![Diagram 1]()
-![Diagram 2]()
-![Diagram 3]()
+![Multiplexer (2:1 MUX) Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/mux%20schematic.png)
+![Multiplexer (2:1 MUX) Layout ](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/mux_layout.png)
+![Multiplexer (2:1 MUX) Layout Core](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/mux_core.png)
+![Multiplexer (2:1 MUX) Layout hdrc](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/mux_hdrc.png)
 
-
-## 6.1.3 D-Latch
+##  D-Latch
 
 ### Initial Layout: 
 The D-Latch was implemented using CMOS inverters and transmission gates. The preliminary version failed DRC with three body connection errors.
@@ -90,9 +93,11 @@ Once body terminals were tied appropriately and routing was redone using Euclide
 ### Hierarchical Validation: 
 The D-Latch was verified using HDRC mode in a larger system context, confirming that all instances meet physical design rules. 
 
-![Diagram 1]()
-![Diagram 2]()
-![Diagram 3]()
+![D-Latch Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/dlatch%20schematic.png)
+![D-Latch Layout ](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/d_latch.png)
+![D-Latch Layout Core](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/d_latch_core.png)
+![D-Latch Layout hdrc](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/d_latch_hdrc.png)
+
 ## Summary of Workflow with Euclidean Path Routing
 
 1.	Schematic Design: Develop transistor-level schematics for each cell (EXOR, MUX, D-Latch).
