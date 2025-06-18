@@ -21,7 +21,7 @@ Added proper body ties (PMOS → VDD, NMOS → GND), aligned diffusion e
 ### HDRC View:
 A hierarchical DRC–only view now lets higher level schematics drop multiple inverter instances while verifying rule compliance without repeating LVS every time.
 
-![Inverter Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20schematic.png)
+![Inverter Schematic](https://github.com/Deepthi-S-G/Standard-Cell-Layout-Design-UMC-180-/blob/main/Images_of_Standard_Cell_Library/inverter%204x%20schematic.png)
 ![Diagram 2]()
 ![Diagram 3]()
 ![Diagram 4]()
